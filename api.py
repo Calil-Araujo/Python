@@ -38,6 +38,7 @@ def display_title_info(data):
     if data is None:
         return
     
+    print(f"-"*30)
     print(f"Título: {data.get('Title', 'N/A')}")
     print(f"Ano: {data.get('Year', 'N/A')}")
     print(f"Tipo: {data.get('Type', 'N/A')}")
@@ -56,12 +57,12 @@ def display_title_info(data):
         print("Pôster não disponível.")
 
 if __name__ == "__main__":
-    print("Bem vindo ao OMDb Explorer.")
+    print("----Bem vindo ao OMDb Explorer----")
     print("Digite o título do um filme ou série para buscar informações.")
     print("Digite 'sair' a qualquer momento para encerrar.")
 
     while True:
-        search_term = input("Digite o título: ")
+        search_term = input("\nDigite o título: ")
         if search_term.lower() == 'sair':
             break
 
